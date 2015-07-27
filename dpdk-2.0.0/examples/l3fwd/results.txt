@@ -1,0 +1,221 @@
+EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 8 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 10 on socket 0
+EAL: Detected lcore 4 as core 1 on socket 0
+EAL: Detected lcore 5 as core 9 on socket 0
+EAL: Detected lcore 6 as core 0 on socket 0
+EAL: Detected lcore 7 as core 8 on socket 0
+EAL: Detected lcore 8 as core 2 on socket 0
+EAL: Detected lcore 9 as core 10 on socket 0
+EAL: Detected lcore 10 as core 1 on socket 0
+EAL: Detected lcore 11 as core 9 on socket 0
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 12 lcore(s)
+EAL: VFIO modules not all loaded, skip VFIO support...
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f7adf000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x2a400000 bytes
+EAL: Virtual area found at 0x7f7ab4a00000 (size = 0x2a400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f7ab4600000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f7ab4200000 (size = 0x200000)
+EAL: Ask a virtual area of 0x55400000 bytes
+EAL: Virtual area found at 0x7f7a5ec00000 (size = 0x55400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f7a5e800000 (size = 0x200000)
+EAL: Requesting 1024 pages of size 2MB from socket 0
+EAL: TSC frequency is ~2400084 KHz
+EAL: Master lcore 0 is ready (tid=e4d14900;cpuset=[0])
+PMD: ENICPMD trace: rte_enic_pmd_init
+EAL: lcore 1 is ready (tid=5dbf2700;cpuset=[1])
+EAL: PCI device 0000:06:00.0 on NUMA socket -1
+EAL:   probe driver: 8086:1521 rte_igb_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: PCI device 0000:06:00.1 on NUMA socket -1
+EAL:   probe driver: 8086:1521 rte_igb_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: PCI device 0000:09:00.0 on NUMA socket -1
+EAL:   probe driver: 8086:1528 rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7f7adf200000
+EAL:   PCI memory mapped at 0x7f7adf400000
+PMD: eth_ixgbe_dev_init(): MAC: 4, PHY: 3
+PMD: eth_ixgbe_dev_init(): port 0 vendorID=0x8086 deviceID=0x1528
+EAL: PCI device 0000:09:00.1 on NUMA socket -1
+EAL:   probe driver: 8086:1528 rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7f7adf404000
+EAL:   PCI memory mapped at 0x7f7adf604000
+PMD: eth_ixgbe_dev_init(): MAC: 4, PHY: 3
+PMD: eth_ixgbe_dev_init(): port 1 vendorID=0x8086 deviceID=0x1528
+Promiscuous mode selected
+Initializing port 0 ... Creating queues: nb_rxq=1 nb_txq=2...  Address:A0:36:9F:68:FC:F4, Allocated mbuf pool on socket 0
+Hash: Adding 0x4 keys
+txq=0,0,0 PMD: ixgbe_dev_tx_queue_setup(): sw_ring=0x7f7ab54ebec0 hw_ring=0x7f7adf041500 dma_addr=0xa5441500
+PMD: ixgbe_set_tx_function(): Using simple tx code path
+PMD: ixgbe_set_tx_function(): Vector tx enabled.
+txq=1,1,0 PMD: ixgbe_dev_tx_queue_setup(): sw_ring=0x7f7ab54e9d80 hw_ring=0x7f7adf051500 dma_addr=0xa5451500
+PMD: ixgbe_set_tx_function(): Using simple tx code path
+PMD: ixgbe_set_tx_function(): Vector tx enabled.
+
+Initializing port 1 ... Creating queues: nb_rxq=1 nb_txq=2...  Address:A0:36:9F:68:FC:F6, txq=0,0,0 PMD: ixgbe_dev_tx_queue_setup(): sw_ring=0x7f7ab54e7b40 hw_ring=0x7f7adf061500 dma_addr=0xa5461500
+PMD: ixgbe_set_tx_function(): Using simple tx code path
+PMD: ixgbe_set_tx_function(): Vector tx enabled.
+txq=1,1,0 PMD: ixgbe_dev_tx_queue_setup(): sw_ring=0x7f7ab54e5a00 hw_ring=0x7f7adf071500 dma_addr=0xa5471500
+PMD: ixgbe_set_tx_function(): Using simple tx code path
+PMD: ixgbe_set_tx_function(): Vector tx enabled.
+
+
+Initializing rx queues on lcore 0 ... rxq=0,0,0 PMD: ixgbe_dev_rx_queue_setup(): sw_ring=0x7f7ab54e5180 hw_ring=0x7f7adf081500 dma_addr=0xa5481500
+
+Initializing rx queues on lcore 1 ... rxq=1,0,0 PMD: ixgbe_dev_rx_queue_setup(): sw_ring=0x7f7ab54e4900 hw_ring=0x7f7adf091580 dma_addr=0xa5491580
+
+
+--------------setup detection----------------thread id 0
+PMD: ixgbe_set_rx_function(): Vector rx enabled, please make sure RX burst size no less than 32.
+
+
+
+
+
+PROMISCOUS 
+PMD: ixgbe_set_rx_function(): Vector rx enabled, please make sure RX burst size no less than 32.
+
+
+
+
+
+PROMISCOUS 
+
+Checking link status...packets/s 	 0 	 bytes/s 	 0
+..........packets/s 	 0 	 bytes/s 	 0
+..........packets/s 	 0 	 bytes/s 	 0
+..........packets/s 	 0 	 bytes/s 	 0
+..........packets/s 	 0 	 bytes/s 	 0
+..........packets/s 	 0 	 bytes/s 	 0
+..........packets/s 	 0 	 bytes/s 	 0
+..........packets/s 	 0 	 bytes/s 	 0
+..........packets/s 	 0 	 bytes/s 	 0
+....done
+Port 0 Link Up - speed 10000 Mbps - full-duplex
+Port 1 Link Up - speed 10000 Mbps - full-duplex
+L3FWD: entering main loop on lcore 1
+L3FWD:  -- lcoreid=1 portid=1 rxqueueid=0
+L3FWD: entering main loop on lcore 0
+L3FWD:  -- lcoreid=0 portid=0 rxqueueid=0
+packets/s 	 0 	 bytes/s 	 0
+packets/s 	 0 	 bytes/s 	 0
+packets/s 	 0 	 bytes/s 	 0
+packets/s 	 0 	 bytes/s 	 0
+packets/s 	 0 	 bytes/s 	 0
+packets/s 	 0 	 bytes/s 	 0
+packets/s 	 0 	 bytes/s 	 0
+packets/s 	 0 	 bytes/s 	 0
+packets/s 	 64 	 bytes/s 	 0
+packets/s 	 13472 	 bytes/s 	 96
+packets/s 	 26880 	 bytes/s 	 180
+packets/s 	 40320 	 bytes/s 	 287
+packets/s 	 53696 	 bytes/s 	 389
+packets/s 	 67136 	 bytes/s 	 505
+packets/s 	 80544 	 bytes/s 	 562
+packets/s 	 93984 	 bytes/s 	 658
+packets/s 	 107360 	 bytes/s 	 798
+packets/s 	 120800 	 bytes/s 	 835
+packets/s 	 134208 	 bytes/s 	 993
+packets/s 	 147597 	 bytes/s 	 1026
+packets/s 	 161043 	 bytes/s 	 1167
+packets/s 	 174400 	 bytes/s 	 1237
+packets/s 	 187872 	 bytes/s 	 1344
+packets/s 	 201216 	 bytes/s 	 1444
+packets/s 	 214656 	 bytes/s 	 1554
+packets/s 	 227872 	 bytes/s 	 1643
+packets/s 	 241440 	 bytes/s 	 1722
+packets/s 	 254912 	 bytes/s 	 1816
+packets/s 	 268278 	 bytes/s 	 1929
+packets/s 	 281738 	 bytes/s 	 2028
+packets/s 	 295104 	 bytes/s 	 2105
+packets/s 	 308576 	 bytes/s 	 2198
+packets/s 	 321952 	 bytes/s 	 2296
+packets/s 	 335296 	 bytes/s 	 2400
+packets/s 	 348657 	 bytes/s 	 2519
+packets/s 	 362031 	 bytes/s 	 2573
+packets/s 	 375637 	 bytes/s 	 2720
+packets/s 	 388961 	 bytes/s 	 2754
+packets/s 	 402314 	 bytes/s 	 2913
+packets/s 	 415633 	 bytes/s 	 2949
+packets/s 	 429007 	 bytes/s 	 3086
+packets/s 	 442542 	 bytes/s 	 3168
+packets/s 	 455837 	 bytes/s 	 3256
+packets/s 	 469397 	 bytes/s 	 3359
+packets/s 	 482720 	 bytes/s 	 3475
+packets/s 	 495616 	 bytes/s 	 3554
+packets/s 	 509568 	 bytes/s 	 3665
+packets/s 	 522848 	 bytes/s 	 3746
+packets/s 	 535585 	 bytes/s 	 3825
+packets/s 	 549715 	 bytes/s 	 3929
+packets/s 	 563361 	 bytes/s 	 4019
+packets/s 	 575563 	 bytes/s 	 4125
+packets/s 	 589952 	 bytes/s 	 4224
+packets/s 	 603424 	 bytes/s 	 4350
+packets/s 	 616544 	 bytes/s 	 4391
+packets/s 	 630080 	 bytes/s 	 4523
+packets/s 	 643467 	 bytes/s 	 4603
+packets/s 	 656597 	 bytes/s 	 4704
+packets/s 	 670244 	 bytes/s 	 4800
+packets/s 	 683420 	 bytes/s 	 4927
+packets/s 	 696960 	 bytes/s 	 4966
+packets/s 	 710496 	 bytes/s 	 5083
+packets/s 	 723812 	 bytes/s 	 5211
+packets/s 	 737148 	 bytes/s 	 5286
+packets/s 	 751144 	 bytes/s 	 5351
+packets/s 	 764440 	 bytes/s 	 5480
+packets/s 	 777649 	 bytes/s 	 5574
+packets/s 	 791119 	 bytes/s 	 5667
+packets/s 	 803822 	 bytes/s 	 5751
+packets/s 	 817571 	 bytes/s 	 5871
+packets/s 	 831142 	 bytes/s 	 5974
+packets/s 	 845080 	 bytes/s 	 6025
+packets/s 	 858001 	 bytes/s 	 6143
+packets/s 	 871321 	 bytes/s 	 6258
+packets/s 	 884887 	 bytes/s 	 6337
+packets/s 	 898236 	 bytes/s 	 6423
+packets/s 	 911356 	 bytes/s 	 6538
+packets/s 	 925043 	 bytes/s 	 6616
+packets/s 	 938580 	 bytes/s 	 6732
+packets/s 	 951294 	 bytes/s 	 6829
+packets/s 	 965230 	 bytes/s 	 6891
+packets/s 	 978867 	 bytes/s 	 7012
+packets/s 	 991278 	 bytes/s 	 7124
+packets/s 	 1005203 	 bytes/s 	 7208
+packets/s 	 1018275 	 bytes/s 	 7267
+packets/s 	 1031142 	 bytes/s 	 7383
+packets/s 	 1045342 	 bytes/s 	 7489
+packets/s 	 1058745 	 bytes/s 	 7586
+packets/s 	 1071681 	 bytes/s 	 7692
+packets/s 	 1086574 	 bytes/s 	 7803
+packets/s 	 1099441 	 bytes/s 	 7859
+packets/s 	 1112941 	 bytes/s 	 7959
+packets/s 	 1126946 	 bytes/s 	 8071
+packets/s 	 1140118 	 bytes/s 	 8193
+packets/s 	 1153169 	 bytes/s 	 8239
+packets/s 	 1166904 	 bytes/s 	 8388
+packets/s 	 1180105 	 bytes/s 	 8426
+packets/s 	 1193378 	 bytes/s 	 8581
+packets/s 	 1206034 	 bytes/s 	 8615
+packets/s 	 1218425 	 bytes/s 	 8740
+packets/s 	 1230207 	 bytes/s 	 8826
+packets/s 	 1242939 	 bytes/s 	 8879
+packets/s 	 1254421 	 bytes/s 	 8985
+packets/s 	 1266249 	 bytes/s 	 9072
+packets/s 	 1277824 	 bytes/s 	 9165
+packets/s 	 1289879 	 bytes/s 	 9250
+packets/s 	 1301387 	 bytes/s 	 9334
+packets/s 	 1312306 	 bytes/s 	 9402
+packets/s 	 1324070 	 bytes/s 	 9472
+packets/s 	 1325182 	 bytes/s 	 9488
+packets/s 	 116492 	 bytes/s 	 827
+packets/s 	 0 	 bytes/s 	 0
+packets/s 	 0 	 bytes/s 	 0
+packets/s 	 0 	 bytes/s 	 0
+packets/s 	 0 	 bytes/s 	 0
