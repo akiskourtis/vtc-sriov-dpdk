@@ -9,7 +9,7 @@
 
 /* The JSON-C library is present */
 /* #undef HAVE_JSON_C */
-
+//
 /* Define to 1 if you have the <memory.h> header file. */
 #define HAVE_MEMORY_H 1
 
