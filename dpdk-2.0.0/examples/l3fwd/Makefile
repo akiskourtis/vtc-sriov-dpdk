@@ -43,9 +43,9 @@ APP = l3fwd
 
 # all source are stored in SRCS-y
 SRCS-y := main.c
-USER_FLAGS = -I/home/localadmin/ndpi -I/home/localadmin/ndpi/src/include
-USER_FLAGS += -I/home/localadmin/ndpi/example
-LDFLAGS+=/home/localadmin/ndpi/src/lib/.libs/libndpi.a
+USER_FLAGS = -I~/inteldpdk/ndpi -I~/inteldpdk/ndpi/src/include
+USER_FLAGS += -I~/inteldpdk/ndpi/example
+LDFLAGS+=~/inteldpdk/ndpi/src/lib/.libs/libndpi.a
 CFLAGS += -O3 $(USER_FLAGS)
 CFLAGS += $(WERROR_FLAGS)
 LDFLAGS += 
