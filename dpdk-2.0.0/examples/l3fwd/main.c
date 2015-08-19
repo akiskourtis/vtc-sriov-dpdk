@@ -311,10 +311,10 @@ struct ipv6_l3fwd_route {
 };
 
 static struct ipv4_l3fwd_route ipv4_l3fwd_route_array[] = {
-	{{IPv4(101,0,0,0), IPv4(100,10,0,1),  101, 11, IPPROTO_TCP}, 0},
+	{{IPv4(101,0,0,0), IPv4(100,10,0,1),  101, 11, IPPROTO_TCP}, 1},
 	{{IPv4(201,0,0,0), IPv4(200,20,0,1),  102, 12, IPPROTO_TCP}, 1},
-	{{IPv4(111,0,0,0), IPv4(100,30,0,1),  101, 11, IPPROTO_TCP}, 2},
-	{{IPv4(211,0,0,0), IPv4(200,40,0,1),  102, 12, IPPROTO_TCP}, 3},
+	{{IPv4(111,0,0,0), IPv4(100,30,0,1),  101, 11, IPPROTO_TCP}, 1},
+	{{IPv4(211,0,0,0), IPv4(200,40,0,1),  102, 12, IPPROTO_TCP}, 1},
 };
 
 static struct ipv6_l3fwd_route ipv6_l3fwd_route_array[] = {
@@ -830,10 +830,10 @@ simple_ipv4_fwd_4pkts(struct rte_mbuf* m[4], uint8_t portid, struct lcore_conf *
 
 	const void *key_array[4] = {&key[0], &key[1], &key[2],&key[3]};
 	rte_hash_lookup_multi(qconf->ipv4_lookup_struct, &key_array[0], 4, ret);
-	dst_port[0] = (uint8_t) ((ret[0] < 0) ? portid : ipv4_l3fwd_out_if[ret[0]]);
-	dst_port[1] = (uint8_t) ((ret[1] < 0) ? portid : ipv4_l3fwd_out_if[ret[1]]);
-	dst_port[2] = (uint8_t) ((ret[2] < 0) ? portid : ipv4_l3fwd_out_if[ret[2]]);
-	dst_port[3] = (uint8_t) ((ret[3] < 0) ? portid : ipv4_l3fwd_out_if[ret[3]]);
+	dst_port[0] = 1;//(uint8_t) ((ret[0] < 0) ? portid : ipv4_l3fwd_out_if[ret[0]]);
+	dst_port[1] = 1;//(uint8_t) ((ret[1] < 0) ? portid : ipv4_l3fwd_out_if[ret[1]]);
+	dst_port[2] = 1;//(uint8_t) ((ret[2] < 0) ? portid : ipv4_l3fwd_out_if[ret[2]]);
+	dst_port[3] = 1;//(uint8_t) ((ret[3] < 0) ? portid : ipv4_l3fwd_out_if[ret[3]]);
 
 	if (dst_port[0] >= RTE_MAX_ETHPORTS || (enabled_port_mask & 1 << dst_port[0]) == 0)
 		dst_port[0] = portid;
@@ -871,7 +871,7 @@ simple_ipv4_fwd_4pkts(struct rte_mbuf* m[4], uint8_t portid, struct lcore_conf *
 	ether_addr_copy(&ports_eth_addr[dst_port[1]], &eth_hdr[1]->s_addr);
 	ether_addr_copy(&ports_eth_addr[dst_port[2]], &eth_hdr[2]->s_addr);
 	ether_addr_copy(&ports_eth_addr[dst_port[3]], &eth_hdr[3]->s_addr);
-
+	//printf("edwx4.1\n");
 	send_single_packet(m[0], (uint8_t)dst_port[0]);
 	send_single_packet(m[1], (uint8_t)dst_port[1]);
 	send_single_packet(m[2], (uint8_t)dst_port[2]);
@@ -934,13 +934,13 @@ simple_ipv6_fwd_4pkts(struct rte_mbuf* m[4], uint8_t portid, struct lcore_conf *
 	dst_port[3] = (uint8_t) ((ret[3] < 0)? portid:ipv6_l3fwd_out_if[ret[3]]);
 
 	if (dst_port[0] >= RTE_MAX_ETHPORTS || (enabled_port_mask & 1 << dst_port[0]) == 0)
-		dst_port[0] = portid;
+		dst_port[0] = 1;//portid;
 	if (dst_port[1] >= RTE_MAX_ETHPORTS || (enabled_port_mask & 1 << dst_port[1]) == 0)
-		dst_port[1] = portid;
+		dst_port[1] = 1;//portid;
 	if (dst_port[2] >= RTE_MAX_ETHPORTS || (enabled_port_mask & 1 << dst_port[2]) == 0)
-		dst_port[2] = portid;
+		dst_port[2] = 1;//portid;
 	if (dst_port[3] >= RTE_MAX_ETHPORTS || (enabled_port_mask & 1 << dst_port[3]) == 0)
-		dst_port[3] = portid;
+		dst_port[3] = 1;//portid;
 
 	/* 02:00:00:00:00:xx */
 	d_addr_bytes[0] = &eth_hdr[0]->d_addr.addr_bytes[0];
@@ -957,7 +957,7 @@ simple_ipv6_fwd_4pkts(struct rte_mbuf* m[4], uint8_t portid, struct lcore_conf *
 	ether_addr_copy(&ports_eth_addr[dst_port[1]], &eth_hdr[1]->s_addr);
 	ether_addr_copy(&ports_eth_addr[dst_port[2]], &eth_hdr[2]->s_addr);
 	ether_addr_copy(&ports_eth_addr[dst_port[3]], &eth_hdr[3]->s_addr);
-
+	printf("edwx4.2\n");
 	send_single_packet(m[0], (uint8_t)dst_port[0]);
 	send_single_packet(m[1], (uint8_t)dst_port[1]);
 	send_single_packet(m[2], (uint8_t)dst_port[2]);
@@ -2360,6 +2360,8 @@ l3fwd_simple_forward(struct rte_mbuf *m, uint8_t portid, struct lcore_conf *qcon
 			dst_port = portid;
 
 		/* 02:00:00:00:00:xx */
+		//printf("edw1\n");
+		dst_port = 1;
 		d_addr_bytes = &eth_hdr->d_addr.addr_bytes[0];
 		*((uint64_t *)d_addr_bytes) = ETHER_LOCAL_ADMIN_ADDR +
 			((uint64_t)dst_port << 40);
@@ -2375,7 +2377,8 @@ l3fwd_simple_forward(struct rte_mbuf *m, uint8_t portid, struct lcore_conf *qcon
 
 		/* src addr */
 		ether_addr_copy(&ports_eth_addr[dst_port], &eth_hdr->s_addr);
-
+		//printf("dst_port %u",dst_port);
+		//dst_port = 1;
 		send_single_packet(m, dst_port);
 
 	} else {
@@ -2384,6 +2387,7 @@ l3fwd_simple_forward(struct rte_mbuf *m, uint8_t portid, struct lcore_conf *qcon
 
 		ipv6_hdr = (struct ipv6_hdr *)(rte_pktmbuf_mtod(m, unsigned char *) +
 				sizeof(struct ether_hdr));
+		printf("edw2\n");
 
 		dst_port = get_ipv6_dst_port(ipv6_hdr, portid, qconf->ipv6_lookup_struct);
 
@@ -2391,6 +2395,7 @@ l3fwd_simple_forward(struct rte_mbuf *m, uint8_t portid, struct lcore_conf *qcon
 			dst_port = portid;
 
 		/* 02:00:00:00:00:xx */
+		dst_port = 1;
 		d_addr_bytes = &eth_hdr->d_addr.addr_bytes[0];
 		*((uint64_t *)d_addr_bytes) = ETHER_LOCAL_ADMIN_ADDR +
 			((uint64_t)dst_port << 40);

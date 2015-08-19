@@ -1,6 +1,6 @@
-dep_main.o = /home/localadmin/dpdk-2.0.0/examples/l3fwd/main.c \
+dep_main.o = /home/stack/inteldpdk/dpdk-2.0.0/examples/l3fwd/main.c \
  /usr/include/stdc-predef.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/rte_config.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/rte_config.h \
  /usr/include/stdio.h /usr/include/features.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -42,7 +42,7 @@ dep_main.o = /home/localadmin/dpdk-2.0.0/examples/l3fwd/main.c \
  /usr/include/x86_64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/getopt.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/rte_common.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/rte_common.h \
  /usr/include/ctype.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.9/include-fixed/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.9/include-fixed/syslimits.h \
@@ -54,7 +54,7 @@ dep_main.o = /home/localadmin/dpdk-2.0.0/examples/l3fwd/main.c \
  /usr/lib/gcc/x86_64-linux-gnu/4.9/include/xmmintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.9/include/mmintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.9/include/mm_malloc.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/rte_vect.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/rte_vect.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.9/include/x86intrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.9/include/ia32intrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.9/include/pmmintrin.h \
@@ -89,43 +89,43 @@ dep_main.o = /home/localadmin/dpdk-2.0.0/examples/l3fwd/main.c \
  /usr/lib/gcc/x86_64-linux-gnu/4.9/include/xsaveintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.9/include/xsaveoptintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.9/include/adxintrin.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/rte_byteorder.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/generic/rte_byteorder.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/rte_byteorder_64.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/rte_log.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/rte_memory.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/exec-env/rte_dom0_common.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/rte_memcpy.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/rte_memzone.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/rte_eal.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/rte_byteorder.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/generic/rte_byteorder.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/rte_byteorder_64.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/rte_log.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/rte_memory.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/exec-env/rte_dom0_common.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/rte_memcpy.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/rte_memzone.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/rte_eal.h \
  /usr/include/sched.h /usr/include/x86_64-linux-gnu/bits/sched.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/rte_per_lcore.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/rte_per_lcore.h \
  /usr/include/pthread.h /usr/include/x86_64-linux-gnu/bits/setjmp.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/rte_launch.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/rte_atomic.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/generic/rte_atomic.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/rte_atomic_64.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/rte_cycles.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/generic/rte_cycles.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/rte_debug.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/rte_branch_prediction.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/rte_prefetch.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/generic/rte_prefetch.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/rte_lcore.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/rte_interrupts.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/exec-env/rte_interrupts.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/rte_pci.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/rte_random.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/rte_ether.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/rte_mbuf.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/rte_mempool.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/rte_ring.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/rte_ethdev.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/rte_dev.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/rte_devargs.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/rte_ether.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/rte_eth_ctrl.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/rte_ip.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/rte_launch.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/rte_atomic.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/generic/rte_atomic.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/rte_atomic_64.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/rte_cycles.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/generic/rte_cycles.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/rte_debug.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/rte_branch_prediction.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/rte_prefetch.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/generic/rte_prefetch.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/rte_lcore.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/rte_interrupts.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/exec-env/rte_interrupts.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/rte_pci.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/rte_random.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/rte_ether.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/rte_mbuf.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/rte_mempool.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/rte_ring.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/rte_ethdev.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/rte_dev.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/rte_devargs.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/rte_ether.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/rte_eth_ctrl.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/rte_ip.h \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/sys/uio.h \
  /usr/include/x86_64-linux-gnu/bits/uio.h \
@@ -138,13 +138,13 @@ dep_main.o = /home/localadmin/dpdk-2.0.0/examples/l3fwd/main.c \
  /usr/include/asm-generic/sockios.h \
  /usr/include/x86_64-linux-gnu/bits/socket2.h \
  /usr/include/x86_64-linux-gnu/bits/in.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/rte_tcp.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/rte_udp.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/rte_string_fns.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/rte_hash.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/rte_hash_crc.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/rte_cpuflags.h \
- /home/localadmin/dpdk-2.0.0/x86_64-native-linuxapp-gcc/include/generic/rte_cpuflags.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/rte_tcp.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/rte_udp.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/rte_string_fns.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/rte_hash.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/rte_hash_crc.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/rte_cpuflags.h \
+ /home/stack/inteldpdk/dpdk-2.0.0//x86_64-native-linuxapp-gcc/include/generic/rte_cpuflags.h \
  /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
@@ -158,20 +158,20 @@ dep_main.o = /home/localadmin/dpdk-2.0.0/examples/l3fwd/main.c \
  /usr/include/x86_64-linux-gnu/bits/sigstack.h \
  /usr/include/x86_64-linux-gnu/sys/ucontext.h \
  /usr/include/x86_64-linux-gnu/bits/sigthread.h \
- /home/localadmin/ndpi/config.h \
- /home/localadmin/ndpi/src/include/ndpi_api.h \
- /home/localadmin/ndpi/src/include/ndpi_main.h /usr/include/byteswap.h \
- /usr/include/x86_64-linux-gnu/sys/param.h \
+ /home/stack/inteldpdk/ndpi/config.h \
+ /home/stack/inteldpdk/ndpi/src/include/ndpi_api.h \
+ /home/stack/inteldpdk/ndpi/src/include/ndpi_main.h \
+ /usr/include/byteswap.h /usr/include/x86_64-linux-gnu/sys/param.h \
  /usr/include/x86_64-linux-gnu/bits/param.h /usr/include/linux/param.h \
  /usr/include/x86_64-linux-gnu/asm/param.h \
  /usr/include/asm-generic/param.h \
- /home/localadmin/ndpi/src/include/ndpi_win32.h \
- /home/localadmin/ndpi/src/include/ndpi_unix.h \
- /home/localadmin/ndpi/src/include/linux_compat.h \
- /home/localadmin/ndpi/src/include/ndpi_define.h /usr/include/arpa/inet.h \
- /usr/include/netinet/ip.h /usr/include/netinet/tcp.h \
- /usr/include/netinet/udp.h \
- /home/localadmin/ndpi/src/include/ndpi_protocol_ids.h \
- /home/localadmin/ndpi/src/include/ndpi_typedefs.h \
- /home/localadmin/ndpi/src/include/ndpi_protocols.h \
- /home/localadmin/ndpi/src/include/ndpi_api.h
+ /home/stack/inteldpdk/ndpi/src/include/ndpi_win32.h \
+ /home/stack/inteldpdk/ndpi/src/include/ndpi_unix.h \
+ /home/stack/inteldpdk/ndpi/src/include/linux_compat.h \
+ /home/stack/inteldpdk/ndpi/src/include/ndpi_define.h \
+ /usr/include/arpa/inet.h /usr/include/netinet/ip.h \
+ /usr/include/netinet/tcp.h /usr/include/netinet/udp.h \
+ /home/stack/inteldpdk/ndpi/src/include/ndpi_protocol_ids.h \
+ /home/stack/inteldpdk/ndpi/src/include/ndpi_typedefs.h \
+ /home/stack/inteldpdk/ndpi/src/include/ndpi_protocols.h \
+ /home/stack/inteldpdk/ndpi/src/include/ndpi_api.h
